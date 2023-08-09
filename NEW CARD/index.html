@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Image</title>
+    <style>
+        .container {
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            width: 100%;
+            background-color: rgb(184, 197, 233);
+
+        }
+        .inside {
+            padding: 20px;
+        }
+        #changeButton{
+            padding: 10px;
+            background-color: rgb(249, 244, 247);
+            border: 0px;
+            border-radius: 10px;
+        }
+        img{
+            width: 500px;
+            height: 300px;
+            transition: all 5s ease-in-out;
+        }
+        .text-container{
+            background-color: rgb(255, 244, 231);
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inside">
+            <img id="image" src="1.jpg" class="img-fluid" alt="Image"><br/>
+            
+            <div class="text-container">
+                <center>
+                <h3 id="msg">Tesla, Inc is a notable manufacturer of electric vehicles (EVs) and clean energy products. Their mission is to accelerate the world's transition to sustainable energy. This American corporate, was founded in 2003 by Martin Eberhard and Marc Tarpenning. </h3>
+                </center>
+            </div>
+            <center>
+            <button id="changeButton" class="btn btn-primary mt-3">Change Image</button>
+            </center>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+    <!-- <script>
+        let imageIndex = 1;
+        const images = ["babina.jpg", "chucha.jpg"]; // Add more image URLs if needed
+
+        const changeButton = document.getElementById('changeButton');
+        const image = document.getElementById('image');
+
+        changeButton.addEventListener('click', () => {
+            imageIndex = (imageIndex + 1) % images.length;
+            image.src = images[imageIndex];
+        });
+    </script> -->
+</body>
+
+</html>
